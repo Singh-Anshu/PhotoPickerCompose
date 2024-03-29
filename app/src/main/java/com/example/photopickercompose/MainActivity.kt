@@ -151,7 +151,7 @@ fun PhotoPickerScreen() {
 @Composable
 fun MultiplePhotoPickerScreen() {
 
-    var selectedImageUris by remember {
+    var selectedImageUris by rememberSaveable {
         mutableStateOf<List<Uri?>>(emptyList())
     }
 
